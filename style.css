@@ -1,0 +1,127 @@
+#main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: 10px auto;
+    padding: 30px 0;
+}
+
+.container-align {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    margin: 0 40px;
+}
+
+.inner-content {
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 0px 40px;
+}
+
+.ballon {
+    position: relative;
+    background: black;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.ballon::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 20px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: black transparent transparent;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.small-img {
+    max-width: 80px;
+    max-height: 80px;
+    margin: 10px 10px 10px 0px;
+}
+
+.profile-name {
+    margin: 0 0 2px;
+    padding: 0;
+    font-size: 20px;
+}
+
+.profile-description {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+}
+
+.portrait {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    height: 225px;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+.large-img {
+    max-width: 400px;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.other-container {
+    background-color: black;
+    border-radius: 30px;
+    padding: 30px;
+}
+
+.other-container > h2 {
+    color: white;
+}
+
+.other-container > h3 {
+    margin: 0;
+    padding: 0;
+    color: rgb(150, 150, 150);
+}
+
+.other-container > p {
+    color: white;
+}
+
+.container-align-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 12px 40px;
+    padding: 10px 75px;
+}
+
+.adjust-children > * {
+    margin: 0 10px;
+}
+
+.transparent-img {
+    opacity: 0.3;
+    width: 65px;
+    height: 65px;
+}
